@@ -1,0 +1,29 @@
+<!--wxml模板引用  -->
+<import src="post-item/post-item-template.wxml" />
+<view>
+    <!-- swiper的高度取决于swiper标签 -->
+    <!-- vertical="true" 可以实现纵向滚动  -->
+    <!-- vertical="{{false}}" 可以实现取消纵向滚动，只使用false不可  -->
+
+    <swiper indicator-dots='true' autoplay='true' interval='5000' catchtap="onSwiperTap">
+        <swiper-item>
+            <image src='/images/wx.png' data-postId="3"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src='/images/iqiyi.png' data-postId="5"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src='/images/vr.png' data-postId="4"></image>
+        </swiper-item>
+    </swiper>
+
+    <block wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="idx">
+        <view catchtap="onPostTap" data-postId='{{item.postId}}'>
+            <!--将item数据绑定到模板页面中  -->
+            <!--将度对象展开平铺  -->
+            <template is="postItem" data="{{...item}}"></template>
+        </view>
+
+    </block>
+
+</view>
