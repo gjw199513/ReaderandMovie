@@ -1,7 +1,7 @@
 <!-- wxml是编写小程序骨架的文件 -->
 <view class='container'>
     <!--小程序中使用rpx可以自适应，但是不是全部的都要用rpx   -->
-    <image src="/images/mtm.jpg"  class='user-avatar'></image>
+    <image src="/images/mtm.jpg" class='user-avatar'></image>
     <!-- 在text中包含的文字，才能字手机中长按选中 -->
     <!--text中的文字直接转义  -->
     <text class='user-name'>hello,gjw</text>

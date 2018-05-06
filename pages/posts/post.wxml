@@ -5,7 +5,7 @@
     <!-- vertical="true" 可以实现纵向滚动  -->
     <!-- vertical="{{false}}" 可以实现取消纵向滚动，只使用false不可  -->
 
-    <swiper indicator-dots='true' autoplay='true' interval='5000' catchtap="onSwiperTap">
+    <swiper indicator-dots='true' autoplay='true' interval='5000' catchtap="onSwiperTap" >
         <swiper-item>
             <image src='/images/wx.png' data-postId="3"></image>
         </swiper-item>

@@ -37,11 +37,11 @@ Page({
         })
     },
 
-    // 处理数据
-    processDoubanData: function (data) {
+    // // 处理数据
+    // processDoubanData: function (data) {
 
 
-    },
+    // },
 
     /*查看图片*/
     viewMoviePostImg: function (e) {

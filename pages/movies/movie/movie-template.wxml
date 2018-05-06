@@ -1,9 +1,9 @@
-<import src="../stars/stars-template.wxml"/>
-    <template name="movieTemplate">
-        <view class='movie-container' catchtap='onMovieTap' data-movieId="{{movieId}}">
-            <image src="{{coverageUrl}}" class='movie-img'></image>
-            <text class='movie-title'>{{title}}</text>
-            <!--多条数据绑定  -->
-            <template is="starsTemplate" data="{{stars:stars, score:average}}"/>
-        </view>
-        </template>
+<import src="../stars/stars-template.wxml" />
+<template name="movieTemplate">
+    <view class='movie-container' catchtap='onMovieTap' data-movieId="{{movieId}}">
+        <image src="{{coverageUrl}}" class='movie-img'></image>
+        <text class='movie-title'>{{title}}</text>
+        <!--多条数据绑定  -->
+        <template is="starsTemplate" data="{{stars:stars, score:average}}" />
+    </view>
+</template>
