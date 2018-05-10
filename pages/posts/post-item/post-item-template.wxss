@@ -1,44 +1,45 @@
-.post-container{
+.post-container {
     display: flex;
     flex-direction: column;
-    margin-top:20rpx;
-    margin-bottom: 40rpx; 
+    margin-top: 20rpx;
+    margin-bottom: 40rpx;
     background-color: #fff;
     border-bottom: 1px solid #ededed;
     border-top: 1px solid #ededed;
     padding-bottom: 5px;
 }
-.post-author-date{
+
+.post-author-date {
     /* margin-top: 10rpx;
     margin-bottom: 20rpx;
     margin-left: 10rpx; */
     margin: 10rpx 0 20rpx 10rpx;
 }
 
-.post-author{
+.post-author {
     width: 60rpx;
     height: 60rpx;
     vertical-align: middle;
 }
 
-.post-date{
+.post-date {
     margin-left: 20rpx;
     vertical-align: middle;
     margin-bottom: 5px;
     font-size: 26rpx;
 }
 
-.post-title{
+.post-title {
     font-size: 34rpx;
-    flex-wrap: 600;
+    font-weight: 600;
+    flex-wrap: wrap;
     color: #333;
-    /* 使用px可以让距离可控  */
-    /* 水平方向控制间距是用rpx，垂直方向使用px  */
+    /* 使用px可以让距离可控  *//* 水平方向控制间距是用rpx，垂直方向使用px  */
     margin-bottom: 10px;
     margin-left: 10px;
 }
 
-.post-image{
+.post-image {
     margin-left: 16px;
     width: 100%;
     height: 340rpx;
@@ -46,7 +47,7 @@
     margin-bottom: 15px;
 }
 
-.post-content{
+.post-content {
     color: #666;
     font-size: 28rpx;
     margin-bottom: 20rpx;
@@ -55,7 +56,7 @@
     line-height: 40rpx;
 }
 
-.post-like{
+.post-like {
     font-size: 13px;
     display: flex;
     flex-direction: row;
@@ -63,14 +64,14 @@
     margin-left: 10px;
 }
 
-.post-like-image{
+.post-like-image {
     height: 16px;
     width: 16px;
     margin-right: 8px;
     vertical-align: middle;
 }
 
-.post-like-font{
+ .post-like-font {
     vertical-align: middle;
     margin-right: 20px;
-}
+} 
